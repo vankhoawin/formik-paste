@@ -1,8 +1,12 @@
 {
   "name": "formik-paste",
-  "version": "0.0.1",
+  "version": "0.0.0-semantically-released",
   "description": "simple declarative bindings for Formik and Twilio React Paste components.",
   "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vnguyen94/formik-paste.git"
+  },
   "scripts": {
     "lint": "yarn lint:js",
     "lint:js": "yarn lint:js:base 'src'",
@@ -10,7 +14,8 @@
     "lint:fix": "yarn lint:js --fix",
     "prettier": "yarn prettier:base -- \"**/*.{json,md,scss,yaml,yml,js,jsx,ts,tsx}\"",
     "prettier:base": "prettier --config ./.prettierrc.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "react",
@@ -20,8 +25,14 @@
     "form"
   ],
   "author": "Van Nguyen",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
   "husky": {
     "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
       "pre-commit": "lint-staged",
       "pre-push": "yarn test"
     }
@@ -64,6 +75,8 @@
     "@twilio-paste/types": "3.0.16",
     "@typescript-eslint/eslint-plugin": "^3.8.0",
     "@typescript-eslint/parser": "^3.8.0",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
     "eslint": "^7.6.0",
     "eslint-config-twilio": "^1.28.0",
     "eslint-config-twilio-react": "^1.28.0",
@@ -74,6 +87,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-uid": "2.3.0",
+    "semantic-release": "^17.1.1",
     "typescript": "3.9.7"
   }
 }
