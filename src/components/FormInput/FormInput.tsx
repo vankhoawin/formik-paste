@@ -13,12 +13,13 @@ export const FormInput = React.forwardRef(
     ref: React.Ref<typeof $FormInput>,
   ) => (
     <Field name={name} validate={validate} fast={fast}>
-      {({ field: { value, onChange, onBlur } }: FieldProps) => (
+      {({ field: { onChange, onBlur } }: FieldProps) => (
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         <$FormInput
           {...restProps}
           ref={(ref as unknown) as React.RefObject<HTMLInputElement>}
           name={name}
-          value={value}
           onChange={(event) => {
             onChange(event);
             $onChange?.(event);
