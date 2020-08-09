@@ -68,6 +68,8 @@
     "eslint-config-twilio": "^1.28.0",
     "eslint-config-twilio-react": "^1.28.0",
     "eslint-config-twilio-ts": "^1.28.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
