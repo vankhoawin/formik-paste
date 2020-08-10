@@ -50,6 +50,9 @@ jobs:
       - name: Install
         run: yarn install
 
+      - name: Build
+        run: yarn build
+
       - name: Release
         run: yarn semantic-release
         env:
