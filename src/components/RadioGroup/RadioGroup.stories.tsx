@@ -13,14 +13,14 @@ export default {
 export const Basic: React.FC = () => (
   <Theme.Provider theme="default">
     <Formik
-      initialValues={{ callbackMethod: 'ongoing' }}
+      initialValues={{ campaign: 'ongoing' }}
       onSubmit={(values) => {
         window.alert(JSON.stringify(values));
       }}
     >
       {({ handleSubmit }) => (
         <form onSubmit={handleSubmit}>
-          <RadioGroup id="callbackMethod" name="callbackMethod" legend="When should your campaign run?">
+          <RadioGroup id="campaign" name="campaign" legend="When should your campaign run?">
             <Radio id="ongoing" value="ongoing" name="campaign">
               Run my ads as ongoing
             </Radio>
