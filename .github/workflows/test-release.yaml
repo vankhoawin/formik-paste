@@ -26,11 +26,11 @@ jobs:
 
       # Install package dependencies
       - name: Install
-        run: npm ci
+        run: yarn install
 
       # Run tests
       - name: Test
-        run: npm test
+        run: yarn test
 
   release:
     # Only release on push to master
@@ -48,10 +48,10 @@ jobs:
           node-version: 12.x
 
       - name: Install
-        run: npm ci
+        run: yarn install
 
       - name: Release
-        run: npx semantic-release
+        run: yarn semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
