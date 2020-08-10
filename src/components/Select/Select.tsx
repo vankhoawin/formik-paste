@@ -12,10 +12,9 @@ export type SelectProps = FormikFieldProps &
 export const Select: React.FC<SelectProps> = ({ name, validate, fast, children, onChange, onBlur, ...restProps }) => {
   return (
     <Field name={name} validate={validate} fast={fast}>
-      {({ form: { setFieldValue, setFieldTouched } }: FieldProps) => (
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
+      {({ field: { value }, form: { setFieldValue, setFieldTouched } }: FieldProps<string | string[]>) => (
         <$Select
+          value={value}
           onChange={(e) => {
             setFieldValue(name, e.target.value);
             onChange?.(e);

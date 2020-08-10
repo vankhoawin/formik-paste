@@ -13,11 +13,10 @@ export const FormTextArea = React.forwardRef(
     ref: React.Ref<typeof $FormTextArea>,
   ) => (
     <Field name={name} validate={validate} fast={fast}>
-      {({ field: { onChange, onBlur } }: FieldProps) => (
-        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-        // @ts-ignore
+      {({ field: { onChange, onBlur, value } }: FieldProps<string>) => (
         <$FormTextArea
           {...restProps}
+          value={value}
           ref={(ref as unknown) as React.RefObject<HTMLTextAreaElement>}
           name={name}
           onChange={(event) => {
