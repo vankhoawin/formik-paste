@@ -17,7 +17,8 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "keywords": [
     "react",
@@ -73,6 +74,7 @@
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
+    "@storybook/storybook-deployer": "^2.8.6",
     "@twilio-paste/animation-library": "0.2.1",
     "@twilio-paste/core": "2.16.23",
     "@twilio-paste/design-tokens": "6.0.1",
