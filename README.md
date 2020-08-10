@@ -1,3 +1,5 @@
+[Storybook](https://vnguyen94.github.io/formik-paste) | [CHANGELOG](https://github.com/semantic-release/commit-analyzer/releases) | [npm](https://www.npmjs.com/package/formik-paste)
+
 # formik-paste
 
 Super-charged [Paste](https://paste.twilio.design) components using [Formik](https://github.com/jaredpalmer/Formik) to handle form state.
