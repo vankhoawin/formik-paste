@@ -53,6 +53,11 @@ jobs:
       - name: Build
         run: yarn build
 
+      - name: Deploy storybook to Github Pages
+        run: yarn deploy-storybook --ci
+        env:
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+
       - name: Release
         run: yarn semantic-release
         env:
