@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/vnguyen94/formik-paste/compare/v1.0.0...v1.0.1) (2020-08-10)
+
+
+### Bug Fixes
+
+* **forminput, formtextarea, select:** fix `value` typing ([6f8966a](https://github.com/vnguyen94/formik-paste/commit/6f8966a476c1823b4d3ae9b1576fa822bb992573))
+
 # 1.0.0 (2020-08-10)
 
 
