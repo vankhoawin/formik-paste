@@ -1,4 +1,3 @@
-// import { action } from '@storybook/addon-actions';
 import { Button, FormLabel, FormHelpText } from '@twilio-paste/core';
 import { Theme } from '@twilio-paste/theme';
 import { Formik } from 'formik';
