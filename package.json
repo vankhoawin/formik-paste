@@ -1,6 +1,6 @@
 {
   "name": "formik-paste",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.0",
   "description": "simple declarative bindings for Formik and Twilio React Paste components.",
   "main": "dist/index.js",
   "repository": {
