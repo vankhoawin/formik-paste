@@ -1,6 +1,6 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'jest-dom', 'testing-library'],
   extends: ['twilio-react', 'twilio-ts'],
   parserOptions: {
     project: './tsconfig.lint.json',
