@@ -15,7 +15,7 @@ This library lightly wraps Paste components with a required `name: string` prop 
 npm install formik-paste
 ```
 
-## Usage:
+## Usage
 
 ```tsx
 import { Button, FormLabel, FormHelpText } from '@twilio-paste/core';
