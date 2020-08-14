@@ -1,4 +1,4 @@
-[Storybook](https://vnguyen94.github.io/formik-paste) | [CHANGELOG](https://github.com/vnguyen94/formik-paste/releases) | [npm](https://www.npmjs.com/package/formik-paste)
+[Storybook](https://vnguyen94.github.io/formik-paste) | [Chromatic](https://www.chromatic.com/builds?appId=5f34d4bd7c13f1002276b19d) | [CHANGELOG](https://github.com/vnguyen94/formik-paste/releases) | [npm](https://www.npmjs.com/package/formik-paste)
 
 # formik-paste
 
