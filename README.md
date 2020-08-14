@@ -2,6 +2,8 @@
 
 # formik-paste
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f9176f69724e4126bfc1c661883a4570)](https://app.codacy.com/manual/vnguyen/formik-paste?utm_source=github.com&utm_medium=referral&utm_content=vnguyen94/formik-paste&utm_campaign=Badge_Grade_Dashboard)
+
 Super-charged [Paste](https://paste.twilio.design) components using [Formik](https://github.com/jaredpalmer/Formik) to handle form state.
 
 This library lightly wraps Paste components with a required `name: string` prop that connects them to a Formik form field. Simply change form component imports from `@twilio-paste/core` to `formik-paste`, and set their `name` prop. Doing so will link the Paste component with a `Formik` field under the hood!
