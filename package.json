@@ -25,8 +25,7 @@
     "semantic-release": "semantic-release",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "deploy-storybook": "storybook-to-ghpages",
-    "chromatic": "npx chromatic --project-token k2lamzd6g6"
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "keywords": [
     "react",
