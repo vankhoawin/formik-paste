@@ -3,6 +3,7 @@
 # formik-paste
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f9176f69724e4126bfc1c661883a4570)](https://app.codacy.com/manual/vnguyen/formik-paste?utm_source=github.com&utm_medium=referral&utm_content=vnguyen94/formik-paste&utm_campaign=Badge_Grade_Dashboard)
+[![Known Vulnerabilities](https://snyk.io/test/github/vnguyen94/formik-paste/badge.svg?targetFile=package.json)](https://snyk.io/test/github/vnguyen94/formik-paste?targetFile=package.json)
 
 Super-charged [Paste](https://paste.twilio.design) components using [Formik](https://github.com/jaredpalmer/Formik) to handle form state.
 
